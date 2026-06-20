@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- LAYER 1: Pembuka -->
+        <section class="layer active" id="layer-1">
+            <div class="icon">🥰</div>
+            <p>HAII Adekk</p>
+            <p>Apakah adekk mau jadi my pacar? 🥰</p>
+            <!-- Tombol Pilihan Baru -->
+            <div class="btn-group">
+                <button class="btn-next" onclick="pindahLayer(4)">Just Friends</button>
+                <button class="btn-gajadi" id="btn-no" onmouseover="hindariTombol()" onclick="hindariTombol()">Mauuu 🥰</button>
+            </div>
+        </section>
+
+       <<!-- LAYER 4: Penutup & Link Balik ke WA -->
+       <section class="layer" id="layer-4">
+       <div class="txt-sukses">yeayyy Just Friends 🤤</div>
+       <button class="btn-finish" onclick="kembaliKeWA()">Kembali</button>
+       </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

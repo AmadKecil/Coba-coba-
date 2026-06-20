@@ -1,0 +1,108 @@
+/* Membuat container utama memenuhi layar dan posisinya di tengah */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Gradasi dari pink sangat muda di atas ke putih di bawah */
+    background: linear-gradient(180deg, #fff0f5 0%, #ffffff 100%);
+    
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+/* Membuat isi di dalam kontainer rapi di tengah */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Memastikan setiap teks di dalam layer berada di tengah */
+.layer {
+    display: none;
+    text-align: center;
+}
+
+.layer.active {
+    display: block;
+}
+
+/* Mengatur ukuran icon emoji agar pas di tengah */
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Mengatur grup tombol agar posisinya sejajar di tengah */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Gaya umum untuk semua tombol agar lebih besar dan menarik */
+button {
+    font-size: 16px;          /* Memperbesar ukuran teks di dalam tombol */
+    font-weight: bold;        /* Membuat teks menjadi tebal */
+    padding: 12px 24px;       /* Mengatur jarak dalam (atas-bawah 12px, kiri-kanan 24px) agar tombol tebal */
+    border: none;             /* Menghilangkan garis tepi bawaan browser yang kaku */
+    border-radius: 25px;      /* Membuat sudut tombol melengkung halus/bulat */
+    cursor: pointer;          /* Mengubah kursor menjadi bentuk tangan saat didekati */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan lembut di bawah tombol */
+    transition: all 0.2s ease; /* Memberikan efek animasi halus saat tombol disentuh */
+}
+
+/* Desain khusus untuk tombol "Mauuu" (Warna Pink/Merah Merona) */
+.btn-next {
+    background-color: #ff4757; /* Warna latar belakang merah/pink */
+    color: white;              /* Warna teks putih */
+}
+
+/* Efek saat tombol "Mauuu" ditekan atau disentuh */
+.btn-next:active {
+    transform: scale(0.95);    /* Memberikan efek tombol sedikit memancat/mengecil saat diklik */
+}
+
+/* Desain khusus untuk tombol "Just Friends" (Warna Abu-Abu kalem) */
+.btn-gajadi {
+    background-color: #a4b0be; /* Warna abu-abu */
+    color: white;              /* Warna teks putih */
+}
+
+.btn-gajadi {
+    background-color: #a4b0be;
+    color: white;
+    /* Memberikan efek transisi selama 0.2 detik agar gerakan mengecilnya mulus */
+    transition: transform 0.2s ease, left 0.1s ease, top 0.1s ease; 
+}
+
+/* Mengatur teks sukses di layer 4 agar sedikit lebih besar dan tebal */
+.txt-sukses {
+    font-size: 24px;         /* Ukuran teks lebih besar dari teks biasa */
+    font-weight: bold;       /* Membuat teks menjadi tebal */
+    color: black;          /* Warna teks pink/merah agar senada */
+    margin-bottom: 25px;     /* Memberikan jarak renggang ke tombol "Kembali" di bawahnya */
+    text-align: center;      /* Memastikan teks tetap lurus di tengah */
+}
+
+/* Mengatur tombol kembali agar terlihat premium dan pas di tengah */
+.btn-finish {
+    background-color: #2ed573; /* Warna hijau sukses */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;    /* Memastikan tombol terpusat dengan text-align container */
+}
